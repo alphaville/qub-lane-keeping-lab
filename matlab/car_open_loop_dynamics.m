@@ -1,9 +1,9 @@
-function df = car_dynamics(x, u, car)
-%CAR_KINEMATICS defines the kinematic equations of a car, using a simple
-%bicycle model
+function df = car_open_loop_dynamics(x, u, car)
+%CAR_OPEN_LOOP_DYNAMICS defines the kinematic equations of a
+%car, using a simple bicycle model
 %
 %Syntax:
-%df = car_dynamics(x, u, car)
+%df = car_open_loop_dynamics(x, u, car)
 %
 %Input arguments:
 % x    a vector with the position and pose of the car, that is,

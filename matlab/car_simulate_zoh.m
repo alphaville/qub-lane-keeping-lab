@@ -1,7 +1,7 @@
 function x_next = car_simulate_zoh(x_init, u, car)
-%CAR_MOVE computes the position and orientation of a vehicle at the end of
-%the sampling period (at time Ts), given its initial position and
-%orientation upon the action of a continuous steering angle.
+%CAR_SIMULATE_ZON computes the position and orientation of a vehicle
+%over the time interval [0, Ts] upon the action of a continuous
+% steering angle given its initial position and orientation
 %
 %Syntax:
 % x_next = car_simulate_zoh(x_init, u, car)

@@ -1,4 +1,4 @@
-function controller = make_pid_controller(Kp, Kd, Ki, Ts, car)
+function controller = make_pid_controller(Kp, Kd, Ki, Ts)
 %MAKE_PID_CONTROLLER constructs a discrete-time PID controller with given
 %(continuous-time) parameters.
 %
@@ -7,18 +7,17 @@ function controller = make_pid_controller(Kp, Kd, Ki, Ts, car)
 %approximation rule.
 %
 %Syntax:
-%controller = make_pid_controller(Kp, Kd, Ki, car)
+%controller = make_pid_controller(Kp, Kd, Ki, Ts)
 %
 %Input arguments:
 % Kp   proportional gain
 % Kd   derivative gain
 % Ki   integral gain
 % Ts   sampling time
-% car  structure with car parameters
 %
 %Output arguments:
 % controller    structure with fields `Kp`, `Kd` and `Ki`,
 %               which are the DISCRETE TIME proportional,
-%               derivative and integral gains
+%               derivative and integral gains, and a field `Ts`
 
 % --- YOUR IMPLEMENTATION GOES HERE! ---
